@@ -1,0 +1,40 @@
+.card{
+    width : 210px;
+    border : 1px solid grey;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+img{
+    width : 200px;
+    border: 5px solid rgb(236,183,191);
+    border-radius: 50%;
+}
+
+#one{
+    padding-left: 30px;
+    padding-top : 50px;
+    padding-right: 50px;
+    padding-right: 60px;
+}
+
+/*좌우상하에 패딩 적용*/
+#one{
+    padding : 50px;
+}
+
+/*첫번째는 상단/하단 두번째는 좌우*/
+#two{
+    padding : 20px 50px;
+}
+
+/*3가지 값 상단/좌우/하단*/
+#three{
+    padding : 1px 2px 30px;
+}
+
+/*상단/우/하단/왼쪽*/
+/*시계 방향으로 돌아간다.*/
+#four{
+    padding : 1px 2px 3px 4px;
+}

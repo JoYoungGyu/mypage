@@ -1,0 +1,159 @@
+  @font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+     }
+
+body{
+    font-family:"LeeSeoyun";
+    margin : 0;
+    /*컴포넌트로부터 바깥쪽으로 만큼 영역이 남지 않게 만든다.*/
+    display: flex;
+    justify-content: center;
+    background-image: url(./image/background.png);
+}
+
+.container{
+    width : 390px; /*핸드폰 너비랑 비슷*/
+    height: 100%;
+    background-color: #ff9d47;
+}
+
+.photos{
+    margin-top: 30px;
+}
+
+.photo-frame{
+    background-color: white;
+    margin : 15px 20px;
+    height: 200px;
+    background-size : cover;
+    /*이미지가 크기에 맞게 들어가는 코드*/
+    position : relative;
+}
+
+.footer{
+    display : flex;
+    flex-direction: column; 
+    /*인생네컷처럼 밑으로 쫙 내려가게 만들기 위해*/
+    align-items: center;
+}
+
+.f-title{
+    color : white;
+    font-size : 25px;
+    font-weight: 900px;
+}
+
+.f-date{
+    color : white;
+    font-size : 15px;
+    font-weight: 900;
+}
+
+#image1{
+    background-image: url(./image/newjeans_logo.png);
+}
+
+#image2{
+    background-image: url(./image/newjeans_cut1.png);
+}
+
+#image3{
+    background-image: url(./image/newjeans_cut2.png);
+}
+
+#image4{
+    background-image: url(./image/newjeans_cut3.png);
+}
+
+.photo-description{
+    color : white;
+    background-color: black;
+
+    width : fit-content;
+    /*텍스트 글자 수에 맞는 너비를 가져라*/
+    padding : 0 20px;
+    margin-bottom : 10px;
+    border-radius: 10px;
+    position: absolute;
+    /*위에 relative를 기준으로 잡고 움직이겠다.*/
+    bottom : 0;
+
+    /*왼쪽에서 50% 만큼 정확히 가운데 정렬*/
+    transform: translate(-50%);
+    left : 50%;
+}
+
+/*이미지 설정 밑으로 내리기*/
+
+
+h2::first-letter{
+    font-size : 50px;
+}
+
+p::first-line{
+    color : purple
+}
+
+p::selection{
+    background-color: #fcfcfc;
+}
+
+h1{
+    color : red;
+}
+
+h1{
+    color : yellow;
+}
+
+.foo[style*="color:red"]{
+    color : firebrick !important;
+}
+
+button, input{
+    color : inherit;
+}
+
+div{
+    width : 250px; /*가로*/
+    height: 150px; /*세로*/
+}
+
+#one{
+    background-color: red;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+
+    box-sizing : border-box;
+    /*좌우 테두리 기준으로 요소의 크기 결정*/
+    /*요소의 가장 끝선을 기준으로 한다.*/
+
+}
+
+#two{
+    background-color: blueviolet;
+    border-color : #fcfcfc;
+    border-style: dashed;
+    /*절취선*/
+    border-width: 5px;
+    border-left-color: red;
+    border-left-width: 9px;
+    /*왼쪽 테두리만 색깔 변경*/
+    /*각 방향 다 선택가능*/
+}
+
+#three{
+    background-color: aquamarine;
+    /*두께가 4px인 점선 만들기*/
+    /*색상은 검정*/
+    border : 4px solid white;
+    border-left-color: aquamarine;
+    border-radius: 10px; /*모깍기*/
+
+}
+

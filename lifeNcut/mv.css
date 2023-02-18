@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "LeeSeoyun";
+    margin: 0;
+    /*컴포넌트로부터 바깥쪽으로 만큼 영역이 남지 않게 만든다.*/
+    display: flex;
+    justify-content: center;
+    background-image: url(./image/background.png);
+}
+
+.container{
+ width : 520px;
+ height: 100%;
+ background-color: aquamarine;   
+}
+
+.mv{
+    margin-top : 30px;
+}
+
+.mv_frame{
+    background-color: white;
+    margin : 10px 50px;
+    height: 200px;
+    background-size : cover;
+    /*이미지가 크기에 맞게 들어가는 코드*/
+    position : relative;
+}
+
+.footer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f_title{
+    color : white;
+    font-size : 25px;
+    font-weight: 900px;
+    margin-top : 10px;
+    margin-bottom: 25px;
+}
+
+.f_content{
+    color : white;
+    font-size : 25px;
+    font-weight: bold;
+    margin-bottom : 25px;
+}
+
+.mv_name{
+    color : white;
+    background-color: #00A36F ;
+    width : fit-content;
+    padding : 5px 20px;
+    position: relative;
+    transform: translate(-50%);
+    left : 50%;
+    margin : 0;
+    border-radius: 10px;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    border-radius: 20px;
+    background-color: #00A36F;   
+    margin : 15px 160px;
+    width : 200px;
+    height: 50px;
+    font-size : 12px;
+    font-weight : bold;
+    border-color: white;
+}
+
+#mvbtn{
+    text-decoration: none;
+    color : white
+}
